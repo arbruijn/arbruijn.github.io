@@ -1,0 +1,1463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>pydwarfdb.SymbolManager</title>
+    <meta name="generator" content="pydoctor 22.9.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="readthedocstheme.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          pydwarfdb <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="search-help-button" title="Help" onclick="toggleSearchHelpText()"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+    
+        <!-- Side navigation -->
+      <div class="sidebarcontainer">
+        <nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="pydwarfdb.SymbolManager.html" class="internal-link" title="This class"><wbr></wbr>Symbol<wbr></wbr>Manager</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__new__" class="internal-link" title="pydwarfdb.SymbolManager.__new__">__new__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__reduce__" class="internal-link" title="pydwarfdb.SymbolManager.__reduce__">__reduce__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__setstate__" class="internal-link" title="pydwarfdb.SymbolManager.__setstate__">__setstate__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#findArrayByID" class="internal-link" title="pydwarfdb.SymbolManager.findArrayByID">find<wbr></wbr>Array<wbr></wbr>By<wbr></wbr>ID</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#findArrayByTypeID" class="internal-link" title="pydwarfdb.SymbolManager.findArrayByTypeID">find<wbr></wbr>Array<wbr></wbr>By<wbr></wbr>Type<wbr></wbr>ID</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#findBaseTypeByID" class="internal-link" title="pydwarfdb.SymbolManager.findBaseTypeByID">find<wbr></wbr>Base<wbr></wbr>Type<wbr></wbr>By<wbr></wbr>ID</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#findBaseTypeByName" class="internal-link" title="pydwarfdb.SymbolManager.findBaseTypeByName">find<wbr></wbr>Base<wbr></wbr>Type<wbr></wbr>By<wbr></wbr>Name</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#findFunctionByID" class="internal-link" title="pydwarfdb.SymbolManager.findFunctionByID">find<wbr></wbr>Function<wbr></wbr>By<wbr></wbr>ID</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#findFunctionByName" class="internal-link" title="pydwarfdb.SymbolManager.findFunctionByName">find<wbr></wbr>Function<wbr></wbr>By<wbr></wbr>Name</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#findRefBaseTypeByID" class="internal-link" title="pydwarfdb.SymbolManager.findRefBaseTypeByID">find<wbr></wbr>Ref<wbr></wbr>Base<wbr></wbr>Type<wbr></wbr>By<wbr></wbr>ID</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#findRefBaseTypeByName" class="internal-link" title="pydwarfdb.SymbolManager.findRefBaseTypeByName">find<wbr></wbr>Ref<wbr></wbr>Base<wbr></wbr>Type<wbr></wbr>By<wbr></wbr>Name</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#findSymbolByID" class="internal-link" title="pydwarfdb.SymbolManager.findSymbolByID">find<wbr></wbr>Symbol<wbr></wbr>By<wbr></wbr>ID</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#findSymbolByName" class="internal-link" title="pydwarfdb.SymbolManager.findSymbolByName">find<wbr></wbr>Symbol<wbr></wbr>By<wbr></wbr>Name</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#findVariableByID" class="internal-link" title="pydwarfdb.SymbolManager.findVariableByID">find<wbr></wbr>Variable<wbr></wbr>By<wbr></wbr>ID</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#findVariableByName" class="internal-link" title="pydwarfdb.SymbolManager.findVariableByName">find<wbr></wbr>Variable<wbr></wbr>By<wbr></wbr>Name</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#getContainingSymbol" class="internal-link" title="pydwarfdb.SymbolManager.getContainingSymbol">get<wbr></wbr>Containing<wbr></wbr>Symbol</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#getElfSymbolAddress" class="internal-link" title="pydwarfdb.SymbolManager.getElfSymbolAddress">get<wbr></wbr>Elf<wbr></wbr>Symbol<wbr></wbr>Address</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#getElfSymbolName" class="internal-link" title="pydwarfdb.SymbolManager.getElfSymbolName">get<wbr></wbr>Elf<wbr></wbr>Symbol<wbr></wbr>Name</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#getFunctionAddress" class="internal-link" title="pydwarfdb.SymbolManager.getFunctionAddress">get<wbr></wbr>Function<wbr></wbr>Address</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#getFunctionName" class="internal-link" title="pydwarfdb.SymbolManager.getFunctionName">get<wbr></wbr>Function<wbr></wbr>Name</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#getSymbolAddress" class="internal-link" title="pydwarfdb.SymbolManager.getSymbolAddress">get<wbr></wbr>Symbol<wbr></wbr>Address</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#getVarNames" class="internal-link" title="pydwarfdb.SymbolManager.getVarNames">get<wbr></wbr>Var<wbr></wbr>Names</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#isFunction" class="internal-link" title="pydwarfdb.SymbolManager.isFunction">is<wbr></wbr>Function</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#isSymbol" class="internal-link" title="pydwarfdb.SymbolManager.isSymbol">is<wbr></wbr>Symbol</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#numberOfSymbols" class="internal-link" title="pydwarfdb.SymbolManager.numberOfSymbols">number<wbr></wbr>Of<wbr></wbr>Symbols</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        
+         
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="index.html" class="internal-link" title="The parent of this class">pydwarfdb</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="pydwarfdb.Array.html" class="internal-link" title="pydwarfdb.Array"><wbr></wbr>Array</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="pydwarfdb.BaseType.html" class="internal-link" title="pydwarfdb.BaseType"><wbr></wbr>Base<wbr></wbr>Type</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="pydwarfdb.ConstType.html" class="internal-link" title="pydwarfdb.ConstType"><wbr></wbr>Const<wbr></wbr>Type</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="pydwarfdb.DwarfParser.html" class="internal-link" title="pydwarfdb.DwarfParser"><wbr></wbr>Dwarf<wbr></wbr>Parser</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="pydwarfdb.Enum.html" class="internal-link" title="pydwarfdb.Enum"><wbr></wbr>Enum</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="pydwarfdb.FuncPointer.html" class="internal-link" title="pydwarfdb.FuncPointer"><wbr></wbr>Func<wbr></wbr>Pointer</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="pydwarfdb.Function.html" class="internal-link" title="pydwarfdb.Function"><wbr></wbr>Function</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="pydwarfdb.Instance.html" class="internal-link" title="pydwarfdb.Instance"><wbr></wbr>Instance</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="pydwarfdb.InstantiationNotAllowed.html" class="internal-link" title="pydwarfdb.InstantiationNotAllowed"><wbr></wbr>Instantiation<wbr></wbr>Not<wbr></wbr>Allowed</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="pydwarfdb.Pointer.html" class="internal-link" title="pydwarfdb.Pointer"><wbr></wbr>Pointer</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="pydwarfdb.RefBaseType.html" class="internal-link" title="pydwarfdb.RefBaseType"><wbr></wbr>Ref<wbr></wbr>Base<wbr></wbr>Type</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="pydwarfdb.ReferencingType.html" class="internal-link" title="pydwarfdb.ReferencingType"><wbr></wbr>Referencing<wbr></wbr>Type</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="pydwarfdb.Struct.html" class="internal-link" title="pydwarfdb.Struct"><wbr></wbr>Struct</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="pydwarfdb.Structured.html" class="internal-link" title="pydwarfdb.Structured"><wbr></wbr>Structured</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="pydwarfdb.StructuredMember.html" class="internal-link" title="pydwarfdb.StructuredMember"><wbr></wbr>Structured<wbr></wbr>Member</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="pydwarfdb.Symbol.html" class="internal-link" title="pydwarfdb.Symbol"><wbr></wbr>Symbol</a></code>
+            </div>
+        
+
+    </li><li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="pydwarfdb.SymbolManager.html" class="internal-link" title="pydwarfdb.SymbolManager"><wbr></wbr>Symbol<wbr></wbr>Manager</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="pydwarfdb.Typedef.html" class="internal-link" title="pydwarfdb.Typedef"><wbr></wbr>Typedef</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="pydwarfdb.Union.html" class="internal-link" title="pydwarfdb.Union"><wbr></wbr>Union</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="pydwarfdb.Variable.html" class="internal-link" title="pydwarfdb.Variable"><wbr></wbr>Variable</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        <div class="childrenKindTitle">Functions</div>
+        <ul>
+    
+    <li class="private">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="index.html#__pyx_unpickle_DwarfParser" class="internal-link" title="pydwarfdb.__pyx_unpickle_DwarfParser">__pyx_unpickle_<wbr></wbr>Dwarf<wbr></wbr>Parser</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        
+         
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        <!-- No sidebar toggle for read the docs theme, the sidebar is always
+          visible when the screen is width enough.
+        -->
+      </div>
+
+    </nav>
+    
+    <div class="container-fluid">
+
+      <div id="main" class="">
+        
+
+        
+
+        <div id="search-results-container" style="display: none;">
+        
+          <div id="search-buttons">
+            <span class="label label-default" id="search-docstrings-button">
+            <label class="checkbox-inline">
+              <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+                search in docstrings
+              </input>
+            </label>
+            </span>
+            
+          </div>
+          
+          <noscript>
+              <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+          </noscript>
+  
+          <div class="hint" id="search-help-box">
+            <p class="rst-last">
+        
+              Search bar offers the following options:
+              <ul>   
+                  <li>
+                    <strong>Term presence.</strong> The below example searches for documents that 
+                      must contain “foo”, might contain “bar” and must not contain “baz”: <code>+foo bar -baz</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Wildcards.</strong> The below example searches for documents with words beginning with “foo”: <code>foo*</code>
+                  </li> 
+  
+                  <li>
+                    <strong>Search in specific fields.</strong> The following search matches all objects 
+                    in "twisted.mail" that matches “search”: <code>+qname:twisted.mail.* +search</code>
+  
+                    <p>
+                      Possible fields: 'name', 'qname' (fully qualified name), 'docstring', and 'kind'.
+                      Last two fields are only applicable if "search in docstrings" is enabled.
+                    </p>
+                  </li>
+  
+                  <li>
+                    <strong>Fuzzy matches.</strong> The following search matches all documents 
+                    that have a word within 1 edit distance of “foo”: <code>foo~1</code>
+                  </li>
+              </ul>
+  
+            </p>
+          </div>
+  
+          <div id="search-status"> </div>
+  
+          <div class="warning" id="search-warn-box" style="display: none;">
+            <p class="rst-last"><span id="search-warn"></span></p>
+          </div>
+  
+          <table id="search-results">
+            <!-- Filled dynamically by JS -->
+          </table>
+          
+          <div style="margin-top: 8px;">
+            <p>Results provided by <a href="https://lunrjs.com">Lunr.js</a></p>
+          </div>
+        </div>
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">pydwarfdb</a></code><wbr></wbr>.<code><a href="pydwarfdb.SymbolManager.html" class="internal-link" title="pydwarfdb.SymbolManager">SymbolManager</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p><code><span class="py-keyword">class</span> <span class="py-defname">SymbolManager</span>:</code></p>
+          <p><a href="classIndex.html#pydwarfdb.SymbolManager">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p class="undocumented">Undocumented</p></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id2">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__new__" class="internal-link" title="pydwarfdb.SymbolManager.__new__">__new__</a></code></td>
+    <td>Create and return a new object.  See help(type) for accurate signature.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__reduce__" class="internal-link" title="pydwarfdb.SymbolManager.__reduce__">__reduce__</a></code></td>
+    <td>SymbolManager.__reduce_cython__(self)</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__setstate__" class="internal-link" title="pydwarfdb.SymbolManager.__setstate__">__setstate__</a></code></td>
+    <td>SymbolManager.__setstate_cython__(self, __pyx_state)</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#findArrayByID" class="internal-link" title="pydwarfdb.SymbolManager.findArrayByID">find<wbr></wbr>Array<wbr></wbr>By<wbr></wbr>ID</a></code></td>
+    <td>SymbolManager.findArrayByID(self, uint64_t typeID)</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#findArrayByTypeID" class="internal-link" title="pydwarfdb.SymbolManager.findArrayByTypeID">find<wbr></wbr>Array<wbr></wbr>By<wbr></wbr>Type<wbr></wbr>ID</a></code></td>
+    <td>SymbolManager.findArrayByTypeID(self, uint64_t typeID, uint64_t length)</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#findBaseTypeByID" class="internal-link" title="pydwarfdb.SymbolManager.findBaseTypeByID">find<wbr></wbr>Base<wbr></wbr>Type<wbr></wbr>By<wbr></wbr>ID</a></code></td>
+    <td>SymbolManager.findBaseTypeByID(self, uint64_t typeID) Returns a type (Struct, Union, Typedef) with the given name or None</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#findBaseTypeByName" class="internal-link" title="pydwarfdb.SymbolManager.findBaseTypeByName">find<wbr></wbr>Base<wbr></wbr>Type<wbr></wbr>By<wbr></wbr>Name</a></code></td>
+    <td>SymbolManager.findBaseTypeByName(self, string name)</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#findFunctionByID" class="internal-link" title="pydwarfdb.SymbolManager.findFunctionByID">find<wbr></wbr>Function<wbr></wbr>By<wbr></wbr>ID</a></code></td>
+    <td>SymbolManager.findFunctionByID(self, uint64_t typeID)</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#findFunctionByName" class="internal-link" title="pydwarfdb.SymbolManager.findFunctionByName">find<wbr></wbr>Function<wbr></wbr>By<wbr></wbr>Name</a></code></td>
+    <td>SymbolManager.findFunctionByName(self, string name) Returns a <code><a href="pydwarfdb.Function.html" class="internal-link" title="pydwarfdb.Function">Function</a></code> with the given name or None</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#findRefBaseTypeByID" class="internal-link" title="pydwarfdb.SymbolManager.findRefBaseTypeByID">find<wbr></wbr>Ref<wbr></wbr>Base<wbr></wbr>Type<wbr></wbr>By<wbr></wbr>ID</a></code></td>
+    <td>SymbolManager.findRefBaseTypeByID(self, uint64_t typeID)</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#findRefBaseTypeByName" class="internal-link" title="pydwarfdb.SymbolManager.findRefBaseTypeByName">find<wbr></wbr>Ref<wbr></wbr>Base<wbr></wbr>Type<wbr></wbr>By<wbr></wbr>Name</a></code></td>
+    <td>SymbolManager.findRefBaseTypeByName(self, string name)</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#findSymbolByID" class="internal-link" title="pydwarfdb.SymbolManager.findSymbolByID">find<wbr></wbr>Symbol<wbr></wbr>By<wbr></wbr>ID</a></code></td>
+    <td>SymbolManager.findSymbolByID(self, uint64_t typeID)</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#findSymbolByName" class="internal-link" title="pydwarfdb.SymbolManager.findSymbolByName">find<wbr></wbr>Symbol<wbr></wbr>By<wbr></wbr>Name</a></code></td>
+    <td>SymbolManager.findSymbolByName(self, string name)</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#findVariableByID" class="internal-link" title="pydwarfdb.SymbolManager.findVariableByID">find<wbr></wbr>Variable<wbr></wbr>By<wbr></wbr>ID</a></code></td>
+    <td>SymbolManager.findVariableByID(self, uint64_t typeID)</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#findVariableByName" class="internal-link" title="pydwarfdb.SymbolManager.findVariableByName">find<wbr></wbr>Variable<wbr></wbr>By<wbr></wbr>Name</a></code></td>
+    <td>SymbolManager.findVariableByName(self, string name) Returns a <code><a href="pydwarfdb.Variable.html" class="internal-link" title="pydwarfdb.Variable">Variable</a></code> with the given name or None</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#getContainingSymbol" class="internal-link" title="pydwarfdb.SymbolManager.getContainingSymbol">get<wbr></wbr>Containing<wbr></wbr>Symbol</a></code></td>
+    <td>SymbolManager.getContainingSymbol(self, uint64_t address)</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#getElfSymbolAddress" class="internal-link" title="pydwarfdb.SymbolManager.getElfSymbolAddress">get<wbr></wbr>Elf<wbr></wbr>Symbol<wbr></wbr>Address</a></code></td>
+    <td>SymbolManager.getElfSymbolAddress(self, string name)</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#getElfSymbolName" class="internal-link" title="pydwarfdb.SymbolManager.getElfSymbolName">get<wbr></wbr>Elf<wbr></wbr>Symbol<wbr></wbr>Name</a></code></td>
+    <td>SymbolManager.getElfSymbolName(self, uint64_t address)</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#getFunctionAddress" class="internal-link" title="pydwarfdb.SymbolManager.getFunctionAddress">get<wbr></wbr>Function<wbr></wbr>Address</a></code></td>
+    <td>SymbolManager.getFunctionAddress(self, string name)</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#getFunctionName" class="internal-link" title="pydwarfdb.SymbolManager.getFunctionName">get<wbr></wbr>Function<wbr></wbr>Name</a></code></td>
+    <td>SymbolManager.getFunctionName(self, uint64_t address)</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#getSymbolAddress" class="internal-link" title="pydwarfdb.SymbolManager.getSymbolAddress">get<wbr></wbr>Symbol<wbr></wbr>Address</a></code></td>
+    <td>SymbolManager.getSymbolAddress(self, string name)</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#getVarNames" class="internal-link" title="pydwarfdb.SymbolManager.getVarNames">get<wbr></wbr>Var<wbr></wbr>Names</a></code></td>
+    <td>SymbolManager.getVarNames(self)</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#isFunction" class="internal-link" title="pydwarfdb.SymbolManager.isFunction">is<wbr></wbr>Function</a></code></td>
+    <td>SymbolManager.isFunction(self, uint64_t address)</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#isSymbol" class="internal-link" title="pydwarfdb.SymbolManager.isSymbol">is<wbr></wbr>Symbol</a></code></td>
+    <td>SymbolManager.isSymbol(self, uint64_t address)</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#numberOfSymbols" class="internal-link" title="pydwarfdb.SymbolManager.numberOfSymbols">number<wbr></wbr>Of<wbr></wbr>Symbols</a></code></td>
+    <td>SymbolManager.numberOfSymbols(self)</td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basemethod">
+  
+  
+  <a name="pydwarfdb.SymbolManager.__new__">
+    
+  </a>
+  <a name="__new__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__new__</span>(*args, **kwargs):
+    
+    <a class="headerLink" href="#__new__" title="pydwarfdb.SymbolManager.__new__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Create and return a new object.  See help(type) for accurate signature.</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="pydwarfdb.SymbolManager.__reduce__">
+    
+  </a>
+  <a name="__reduce__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__reduce__</span>(...):
+    
+    <a class="headerLink" href="#__reduce__" title="pydwarfdb.SymbolManager.__reduce__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>SymbolManager.__reduce_cython__(self)</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="pydwarfdb.SymbolManager.__setstate__">
+    
+  </a>
+  <a name="__setstate__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__setstate__</span>(...):
+    
+    <a class="headerLink" href="#__setstate__" title="pydwarfdb.SymbolManager.__setstate__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>SymbolManager.__setstate_cython__(self, __pyx_state)</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="pydwarfdb.SymbolManager.findArrayByID">
+    
+  </a>
+  <a name="findArrayByID">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-keyword">def</span> <span class="py-defname">findArrayByID</span>(...):
+    
+    <a class="headerLink" href="#findArrayByID" title="pydwarfdb.SymbolManager.findArrayByID">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>SymbolManager.findArrayByID(self, uint64_t typeID)</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="pydwarfdb.SymbolManager.findArrayByTypeID">
+    
+  </a>
+  <a name="findArrayByTypeID">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-keyword">def</span> <span class="py-defname">findArrayByTypeID</span>(...):
+    
+    <a class="headerLink" href="#findArrayByTypeID" title="pydwarfdb.SymbolManager.findArrayByTypeID">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>SymbolManager.findArrayByTypeID(self, uint64_t typeID, uint64_t length)</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="pydwarfdb.SymbolManager.findBaseTypeByID">
+    
+  </a>
+  <a name="findBaseTypeByID">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-keyword">def</span> <span class="py-defname">findBaseTypeByID</span>(...):
+    
+    <a class="headerLink" href="#findBaseTypeByID" title="pydwarfdb.SymbolManager.findBaseTypeByID">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>SymbolManager.findBaseTypeByID(self, uint64_t typeID) Returns a type (Struct, Union, Typedef) with the given name or None</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="pydwarfdb.SymbolManager.findBaseTypeByName">
+    
+  </a>
+  <a name="findBaseTypeByName">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-keyword">def</span> <span class="py-defname">findBaseTypeByName</span>(...):
+    
+    <a class="headerLink" href="#findBaseTypeByName" title="pydwarfdb.SymbolManager.findBaseTypeByName">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>SymbolManager.findBaseTypeByName(self, string name)</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="pydwarfdb.SymbolManager.findFunctionByID">
+    
+  </a>
+  <a name="findFunctionByID">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-keyword">def</span> <span class="py-defname">findFunctionByID</span>(...):
+    
+    <a class="headerLink" href="#findFunctionByID" title="pydwarfdb.SymbolManager.findFunctionByID">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>SymbolManager.findFunctionByID(self, uint64_t typeID)</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="pydwarfdb.SymbolManager.findFunctionByName">
+    
+  </a>
+  <a name="findFunctionByName">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-keyword">def</span> <span class="py-defname">findFunctionByName</span>(...):
+    
+    <a class="headerLink" href="#findFunctionByName" title="pydwarfdb.SymbolManager.findFunctionByName">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>SymbolManager.findFunctionByName(self, string name) Returns a <code><a href="pydwarfdb.Function.html" class="internal-link" title="pydwarfdb.Function">Function</a></code> with the given name or None</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="pydwarfdb.SymbolManager.findRefBaseTypeByID">
+    
+  </a>
+  <a name="findRefBaseTypeByID">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-keyword">def</span> <span class="py-defname">findRefBaseTypeByID</span>(...):
+    
+    <a class="headerLink" href="#findRefBaseTypeByID" title="pydwarfdb.SymbolManager.findRefBaseTypeByID">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>SymbolManager.findRefBaseTypeByID(self, uint64_t typeID)</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="pydwarfdb.SymbolManager.findRefBaseTypeByName">
+    
+  </a>
+  <a name="findRefBaseTypeByName">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-keyword">def</span> <span class="py-defname">findRefBaseTypeByName</span>(...):
+    
+    <a class="headerLink" href="#findRefBaseTypeByName" title="pydwarfdb.SymbolManager.findRefBaseTypeByName">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>SymbolManager.findRefBaseTypeByName(self, string name)</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="pydwarfdb.SymbolManager.findSymbolByID">
+    
+  </a>
+  <a name="findSymbolByID">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-keyword">def</span> <span class="py-defname">findSymbolByID</span>(...):
+    
+    <a class="headerLink" href="#findSymbolByID" title="pydwarfdb.SymbolManager.findSymbolByID">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>SymbolManager.findSymbolByID(self, uint64_t typeID)</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="pydwarfdb.SymbolManager.findSymbolByName">
+    
+  </a>
+  <a name="findSymbolByName">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-keyword">def</span> <span class="py-defname">findSymbolByName</span>(...):
+    
+    <a class="headerLink" href="#findSymbolByName" title="pydwarfdb.SymbolManager.findSymbolByName">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>SymbolManager.findSymbolByName(self, string name)</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="pydwarfdb.SymbolManager.findVariableByID">
+    
+  </a>
+  <a name="findVariableByID">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-keyword">def</span> <span class="py-defname">findVariableByID</span>(...):
+    
+    <a class="headerLink" href="#findVariableByID" title="pydwarfdb.SymbolManager.findVariableByID">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>SymbolManager.findVariableByID(self, uint64_t typeID)</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="pydwarfdb.SymbolManager.findVariableByName">
+    
+  </a>
+  <a name="findVariableByName">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-keyword">def</span> <span class="py-defname">findVariableByName</span>(...):
+    
+    <a class="headerLink" href="#findVariableByName" title="pydwarfdb.SymbolManager.findVariableByName">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>SymbolManager.findVariableByName(self, string name) Returns a <code><a href="pydwarfdb.Variable.html" class="internal-link" title="pydwarfdb.Variable">Variable</a></code> with the given name or None</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="pydwarfdb.SymbolManager.getContainingSymbol">
+    
+  </a>
+  <a name="getContainingSymbol">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-keyword">def</span> <span class="py-defname">getContainingSymbol</span>(...):
+    
+    <a class="headerLink" href="#getContainingSymbol" title="pydwarfdb.SymbolManager.getContainingSymbol">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>SymbolManager.getContainingSymbol(self, uint64_t address)</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="pydwarfdb.SymbolManager.getElfSymbolAddress">
+    
+  </a>
+  <a name="getElfSymbolAddress">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-keyword">def</span> <span class="py-defname">getElfSymbolAddress</span>(...):
+    
+    <a class="headerLink" href="#getElfSymbolAddress" title="pydwarfdb.SymbolManager.getElfSymbolAddress">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>SymbolManager.getElfSymbolAddress(self, string name)</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="pydwarfdb.SymbolManager.getElfSymbolName">
+    
+  </a>
+  <a name="getElfSymbolName">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-keyword">def</span> <span class="py-defname">getElfSymbolName</span>(...):
+    
+    <a class="headerLink" href="#getElfSymbolName" title="pydwarfdb.SymbolManager.getElfSymbolName">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>SymbolManager.getElfSymbolName(self, uint64_t address)</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="pydwarfdb.SymbolManager.getFunctionAddress">
+    
+  </a>
+  <a name="getFunctionAddress">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-keyword">def</span> <span class="py-defname">getFunctionAddress</span>(...):
+    
+    <a class="headerLink" href="#getFunctionAddress" title="pydwarfdb.SymbolManager.getFunctionAddress">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>SymbolManager.getFunctionAddress(self, string name)</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="pydwarfdb.SymbolManager.getFunctionName">
+    
+  </a>
+  <a name="getFunctionName">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-keyword">def</span> <span class="py-defname">getFunctionName</span>(...):
+    
+    <a class="headerLink" href="#getFunctionName" title="pydwarfdb.SymbolManager.getFunctionName">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>SymbolManager.getFunctionName(self, uint64_t address)</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="pydwarfdb.SymbolManager.getSymbolAddress">
+    
+  </a>
+  <a name="getSymbolAddress">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-keyword">def</span> <span class="py-defname">getSymbolAddress</span>(...):
+    
+    <a class="headerLink" href="#getSymbolAddress" title="pydwarfdb.SymbolManager.getSymbolAddress">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>SymbolManager.getSymbolAddress(self, string name)</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="pydwarfdb.SymbolManager.getVarNames">
+    
+  </a>
+  <a name="getVarNames">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-keyword">def</span> <span class="py-defname">getVarNames</span>(...):
+    
+    <a class="headerLink" href="#getVarNames" title="pydwarfdb.SymbolManager.getVarNames">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>SymbolManager.getVarNames(self)</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="pydwarfdb.SymbolManager.isFunction">
+    
+  </a>
+  <a name="isFunction">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-keyword">def</span> <span class="py-defname">isFunction</span>(...):
+    
+    <a class="headerLink" href="#isFunction" title="pydwarfdb.SymbolManager.isFunction">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>SymbolManager.isFunction(self, uint64_t address)</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="pydwarfdb.SymbolManager.isSymbol">
+    
+  </a>
+  <a name="isSymbol">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-keyword">def</span> <span class="py-defname">isSymbol</span>(...):
+    
+    <a class="headerLink" href="#isSymbol" title="pydwarfdb.SymbolManager.isSymbol">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>SymbolManager.isSymbol(self, uint64_t address)</p>
+</div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="pydwarfdb.SymbolManager.numberOfSymbols">
+    
+  </a>
+  <a name="numberOfSymbols">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-keyword">def</span> <span class="py-defname">numberOfSymbols</span>(...):
+    
+    <a class="headerLink" href="#numberOfSymbols" title="pydwarfdb.SymbolManager.numberOfSymbols">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>SymbolManager.numberOfSymbols(self)</p>
+</div>
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+    <hr />
+    
+    
+    <div class="container">
+      <a href="index.html">API Documentation</a> for pydwarfdb,
+    generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+      22.9.1 at 2022-11-06 18:00:32.
+    </div>
+    
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="searchlib.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
+  
+  </footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>
