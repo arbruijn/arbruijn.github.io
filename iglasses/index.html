@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>i-Glasses emulator</title>
+
+  <style>
+    #jsdos  {
+      width: 640px;
+      height: 400px;
+    }
+    #webgl  {
+      width: 1280px;
+      height: 400px;
+    }
+  </style>
+</head>
+
+<body>
+  <canvas id="jsdos"></canvas>
+  
+  <label for="antifilter">Antifilter (experimental):</label><input id="antifilter" type="checkbox">
+
+  <canvas id="webgl"></canvas>
+  <button id="fullscreen">Fullscreen</button>
+  <button id="webxr-button" disabled>WebXR</button>
+  <script src="twgl-full.min.js"></script>
+  <script src="emulator.js"></script>
+  <script>
+  let vremulator = new VREmulator({
+    jsdosElement: document.querySelector("#jsdos"),
+    webglElement: document.querySelector("#webgl")
+  });
+  vremulator.init();
+  </script>
+    <script type="text/javascript" src="browserfs.min.js"></script>
+    <script type="text/javascript" src="loader.js"></script>
+    <script type="text/javascript" src="tracker.js"></script>
+    <script type="text/javascript">
+      var emulator = new Emulator(document.querySelector("#jsdos"),
+                                  null,
+                                  new DosBoxLoader(DosBoxLoader.emulatorJS("dosbox.wasm.js"),
+                                                   DosBoxLoader.emulatorWASM("dosbox.wasm"),
+                                                   DosBoxLoader.locateAdditionalEmulatorJS(locateAdditionalFiles),
+                                                   DosBoxLoader.nativeResolution(640, 400),
+                                                   DosBoxLoader.mountZip("c",
+                                                                         DosBoxLoader.fetchFile("Game File",
+                                                                                                "d1.zip")),
+                                                   DosBoxLoader.mountFile("dosbox.conf", DosBoxLoader.localFile("DosBox.conf", "[serial]\nserial1=nullmodem server:tracker.invalid port:8000 transparent:1 telnet:0")),
+                                                   DosBoxLoader.startExe("descent -iglasses"),
+                                                   DosBoxLoader.extraArgs(["-conf", "dosbox.conf"])));
+                                                   
+      emulator.setCallbacks({
+        before_run: function() {
+          var tracker = new Tracker();
+		  document.querySelector("#antifilter").addEventListener("change", function(e) {
+			tracker.use_antifilter = this.checked;
+		  }, false);
+          tracker.install(SOCKFS);
+          Module['websocket']['on']('error', function(error) {console.log('Socket error ' + error);});
+        }
+      });
+      emulator.start({ });
+      function locateAdditionalFiles(filename) {
+        return filename;
+      }
+    </script>
+    <script type="text/javascript">
+    
+    document.querySelector("#fullscreen").addEventListener("click", function(e) {
+        document.querySelector("#webgl").requestFullscreen();
+    });
+    
+    if(navigator.xr) {
+        navigator.xr.isSessionSupported("immersive-vr").then(supported => {
+            if(supported) document.querySelector("#webxr-button").disabled = false;
+        });
+    }
+    
+    document.querySelector("#webxr-button").addEventListener("click", async function(e) {
+		    document.querySelector("#jsdos").requestPointerLock();
+        let webglCanvas = document.querySelector("#webgl");
+        let gl = webglCanvas.getContext("webgl2", {xrCompatible: true});
+        vremulator.xrSession = await navigator.xr.requestSession("immersive-vr");
+        vremulator.xrSession.addEventListener("end", () => {
+          vremulator.xrSession = null;
+        });
+        vremulator.xrReferenceSpace = await vremulator.xrSession.requestReferenceSpace("local");
+        let xrLayer = new XRWebGLLayer(vremulator.xrSession, gl);
+        vremulator.xrSession.updateRenderState({baseLayer: xrLayer});
+    });
+  </script>
+</body>
+
+</html>
